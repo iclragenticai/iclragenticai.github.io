@@ -34,6 +34,40 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  
+  <style>
+.container_image {
+    display: flex;
+    justify-content: space-between; /* Space between images */
+    align-items: center; /* Center images vertically */
+    max-width: 1200px; /* Optional: set a max width for the container */
+    margin: auto; /* Center the container on the page */
+}
+
+.image {
+    width: 23%; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+#about_section div {
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+<!-- li span {
+  position: relative;
+  left: -10px;
+} -->
+
+ul li {
+            list-style-type: none;
+            padding-left: 0;
+			list-style: none;
+			text-align: left
+        }
+
+</style>
+  
 </head>
 
 <body class="index-page">
@@ -49,26 +83,23 @@
       <nav id="navmenu" class="navmenu">
         <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#home">Home</a></li>
           <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#features">Speakers</a></li>
-          <li><a href="index.html#services">Schedule</a></li>
-          <li><a href="index.html#pricing">Contact</a></li>
-		  <li><a href="index.html#pricing">Sponsors</a></li>
+          <li><a href="index.html#speakers">Speakers</a></li>
+          <li><a href="index.html#schedule">Schedule</a></li>
+		  <li><a href="index.html#organizers">Organizers</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
           <li class="dropdown"><a href="#"><span>More</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Call for Papers</a></li>
-              <li><a href="#">Event Venue</a></li>
               <li><a href="#">Registration</a></li>
-              <li><a href="#">Committee</a></li>
-			  <li><a href="#">Flyer</a></li>
             </ul>
           </li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="index.html#about">Gallery</a>
+      <a class="btn-getstarted" href="index.html#speakers">Gallery</a>
 
     </div>
   </header>
@@ -85,7 +116,7 @@
           <h1 data-aos="fade-up">ICLR Agentic AI Workshop 2025</h1>
           <p data-aos="fade-up" data-aos-delay="100">April 24-28, 2025 | Singapore Expo<br></p>
           <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-            <a href="#about" class="btn-success">Gallery</a>
+            <a href="#speakers" class="btn-getstarted">Gallery</a>
             <!-- <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
           </div>
           <!-- <img src="assets/img/hero-services-img.webp" class="img-fluid hero-img" alt="" data-aos="zoom-out" data-aos-delay="300"> -->
@@ -143,44 +174,63 @@
 
       <div class="container">
 
-        <div class="row gy-4">
+        <h2>About the Workshop</h2>
+        
+		<p align="left"> This workshop is designed to unite researchers and scientists from various fields, including both academia and industry, under the theme "Towards Agentic AI for Science." It will specifically focus on agentic AI systems in the context of scientific discovery. To facilitate this, AI systems must be capable of <i> generating novel and viable hypotheses, comprehend the applications and limitations of the generated hypotheses, quantify the resources needed to test the generated hypothesis, and validate the novelty and feasibility of the generated hypothesis by designing and implementing the experiments. </i>
+			  </p>
+		<p align="left">This workshop invites insights from scientists and technology developers to gain a clearer understanding of how to address the factors that necessitate human involvement in AI systems. In this regard, we aim to thoroughly examine several important issues by welcoming and covering a wide range of topics, including (non-exclusively): </p>
+		
+		<ul>
+		<li><b> Agentic AI as Autonomous Scientists -</b> empower AI to generate novel hypotheses, conduct experiments, analyze data, and draw conclusions without human guidance.
+		<ul>
+		<li>Novel hypothesis generation</li>
+		<li>Automatic comprehension, quantification and validation of generated hypothesis</li>
+		</ul>
+		
+		</li>
+		<li><b> Automated AI: Agentic AI systems to achieve specific scientific goals -</b> leveraging capabilities of AI to enhance research efficiency and innovation.
+		<ul>
+		<li>Adaptive Learning Systems (ALS)</li>
+		<li>Lifelong Learning Machines (L2M)</li>
+		<li>Automated scientific rule mining, knowledge extraction and representation, and workflow management</li>
+		</ul>
+		
+		</li>
+		<li><b> Creation of Scientific Agentic AI Systems -</b> develop advanced AI systems capable of functioning autonomously in scientific contexts.
+		<ul>
+		<li>Requirements and guidelines to develop such systems</li>
+		<li>Human-AI collaboration - interface for effective collaboration</li>
+		</ul>
+		
+		</li>
+		<li><b> Automatic Comprehension and Quantification of Agentic AI Systems -</b> develop methodologies and tools that enable a deep understanding and measurable assessment of Agentic AI systems’ performance, capabilities, and impacts in scientific contexts.
+		<ul>
+		<li>Characteristics of Agentic AI behavior</li>
+		<li>Metrics for measuring autonomy and decision-making capabilities</li>
+		<li>Metrics to measure contextual awareness in AI systems</li>
+		</ul>
+		
+		</li>
+		<li><b> Validation of Agentic AI Systems -</b> ensure Agentic AI systems operate reliably, ethically, and effectively in scientific research and applications.
+		<ul>
+		<li>Agentic AI system with worst-case guarantees</li>
+		<li>Diagnosing Agentic AI systems</li>
+		<li>Agentic AI assurance -  robustness, reliability, accountability and trustworthiness</li>
+		</ul>
+		
+		</li>
+		</ul>
+		
+			<p align="left">The rapid advancement of agentic AI systems necessitates the establishment of benchmark datasets, evaluation metrics, and guidelines. Thus, in addition to the previously mentioned topics, we invite research contributions in the following areas</p>
+			<div id="about_section">
+			<ul>
+			<li><b>Dataset:</b> Our proposed dataset track will accept datasets that support  scientific discovery involving agentic AI systems.</li>
+			<li><b>Evaluation:</b> We welcome submissions of innovative evaluation methods or metrics aimed at assessing the performance of agentic AI systems. These metrics may evaluate AI system performance across various stages of knowledge-driven autonomous scientific research, including the generation, understanding, quantification, and validation of scientific hypotheses.</li>
+			</ul>
+			</div>
+            
 
-          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-            <!-- <p class="who-we-are">About the Symposium</p> -->
-            <h3>About the Workshop</h3>
-            <p class="fst-italic">
-              The proposed workshop will bring together researchers from diverse disciplines who are interested in understanding the working of Scientific AI agents. Specifically, how to create AI agents for specific scientific activities, collaboration between AI agents to achieve a specific scientific goal, comprehend the capabilities of AI agents by providing mathematical guarantees, and automatic validation of claims made by AI agents and their capabilities.
-            </p>
-            <!-- <ul>
-              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
-            </ul> -->
-            <!-- <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a> -->
-          </div>
-
-          <!-- <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
-            <div class="row gy-4">
-              <div class="col-lg-6">
-                <img src="assets/img/about-company-1.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="col-lg-6">
-                <div class="row gy-4">
-                  <div class="col-lg-12">
-                    <img src="assets/img/about-company-2.jpg" class="img-fluid" alt="">
-                  </div>
-                  <div class="col-lg-12">
-                    <img src="assets/img/about-company-3.jpg" class="img-fluid" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div> -->
-
-        </div>
-
-      </div>
+     </div>
     </section><!-- /About Section -->
 
     <!-- Clients Section -->
@@ -226,11 +276,16 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Keynote Speakers</h2>
-        <p>We are honored to have invited five distinguished keynote speakers.</p>
+        <p>We are honored to have invited four distinguished keynote speakers.</p>
       </div><!-- End Section Title -->
 
-      <div class="container">
-        <div class="row justify-content-between">
+      <div class="container_image">
+        <!-- <div class="row justify-content-between"> -->
+		<img src="assets/img/keynote-1.jpg" alt="Dr. Michael W. Mahoney" class="image">
+		<img src="assets/img/keynote-2.jpg" alt="Dr. Su-In Lee"  class="image">
+		<img src="assets/img/keynote-3.jpg" alt="Dr. Marinka Zitnik"  class="image">
+		<img src="assets/img/keynote-4.jpg" alt="Dr. Markus J. Buehler"  class="image">
+		</div>
 
           <!-- <div class="col-lg-5 d-flex align-items-center">
 
@@ -274,27 +329,6 @@
             </ul> --><!-- End Tab Nav -->
 
           <!-- </div> -->
-
-          <div class="col-lg-6">
-
-            <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
-
-              <div class="tab-pane fade active show" id="features-tab-1">
-                <img src="assets/img/tabs-1.jpg" alt="" class="img-fluid">
-              </div><!-- End Tab Content Item -->
-
-              <div class="tab-pane fade" id="features-tab-2">
-                <img src="assets/img/tabs-2.jpg" alt="" class="img-fluid">
-              </div><!-- End Tab Content Item -->
-
-              <div class="tab-pane fade" id="features-tab-3">
-                <img src="assets/img/tabs-3.jpg" alt="" class="img-fluid">
-              </div><!-- End Tab Content Item -->
-            </div>
-
-          </div>
-
-        </div>
 
       </div>
 
@@ -363,20 +397,6 @@
         <p>Event schedule for April 24-28, 2025 </p>
       </div><!-- End Section Title -->
 
-      <div class="container">
-
-        <div class="row g-5">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item item-cyan position-relative">
-              <!-- <i class="bi bi-activity icon"></i> -->
-              <div>
-                <h3>Reception</h3>
-                <p>If you are registered, please take your name tags from the registration desk. Onsite registration is not available. Coffee and tea are available nearby.</p>
-                <!-- <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a> -->
-              </div>
-            </div>
-          </div><!-- End Service Item -->
 
           <!-- <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item item-orange position-relative">
@@ -433,9 +453,9 @@
             </div>
           </div> --><!-- End Service Item -->
 
-        </div>
+        <!-- </div>
 
-      </div>
+      </div> -->
 
     </section><!-- /Services Section -->
 
@@ -497,6 +517,22 @@
       </div>
 
     </section> --><!-- /More Features Section -->
+	
+	<section id="organizers" class="schedule section light-background">
+	<div class="container section-title" data-aos="fade-up">
+        <h2>ORGANIZERS</h2>
+        <p>Dr. Danai Koutra / University of Michigan / koutra@umich.edu / https://web.eecs.umich.edu/~dkoutra</p>
+		<p>Dr. Lifu Huang /  UC Davis / lfuhuang@ucdavis.edu / https://wilburone.github.io</p>
+		<p>Dr. Temiloluwa Prioleau / Dartmouth College / tprioleau@dartmouth.edu / https://www.t-prioleau.com</p>
+		<p>Dr. Qingyun Wu / Pennsylvania State University, / qingyun.wu@psu.edu / https://qingyun-wu.github.io</p>
+		<p>Dr. Yujun Yan / Dartmouth College / yujun.yan@dartmouth.edu / https://sites.google.com/umich.edu/yujunyan/home</p>
+		<p>Dr. Yaoqing Yang / Dartmouth College / yaoqing.yang@dartmouth.edu / https://sites.google.com/site/yangyaoqingcmu</p>
+		<p>Dr. James Zou / Stanford University / jamesz@stanford.edu / https://www.james-zou.com/</p>
+		<p>Dr. Dawei Zhou / Virginia Tech / zhoud@vt.edu / https://sites.google.com/view/dawei-zhou/home</p>
+		
+
+      </div>
+	</section>
 
     <!-- Pricing Section -->
     <section id="contact" class="contact section">
