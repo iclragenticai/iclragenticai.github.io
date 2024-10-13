@@ -73,6 +73,30 @@ ul li {
 			list-style: none;
 			text-align: left
         }
+		
+.container_six {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr); /* 3 columns */
+            gap: 20px; /* Space between images */
+            margin: 100px; /* Overall margin */
+        }
+.container_eight {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr); /* 3 columns */
+            gap: 20px; /* Space between images */
+            margin: 100px; /* Overall margin */
+        }
+        .image-box {
+            text-align: center; /* Center the text */
+        }
+        .caption {
+            font-size: 14px; /* Adjust font size */
+            color: #555; /* Set color */
+        }
+        img {
+            width: 100%; /* Make images responsive */
+            height: auto; /* Maintain aspect ratio */
+        }
 
 </style>
   
@@ -285,16 +309,68 @@ ul li {
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Keynote Speakers</h2>
-        <p>We are honored to have invited four distinguished keynote speakers.</p>
+        <p>We are honored to have invited six distinguished keynote speakers.</p>
       </div><!-- End Section Title -->
 
-      <div class="container_image">
+     <!--  <div class="container_image"> -->
         <!-- <div class="row justify-content-between"> -->
-		<img src="assets/img/keynote-1.jpg" alt="Dr. Michael W. Mahoney" class="image">
+		<!-- <img src="assets/img/keynote-1.jpg" alt="Dr. Michael W. Mahoney" class="image">
 		<img src="assets/img/keynote-2.jpg" alt="Dr. Su-In Lee"  class="image">
 		<img src="assets/img/keynote-3.jpg" alt="Dr. Marinka Zitnik"  class="image">
 		<img src="assets/img/keynote-4.jpg" alt="Dr. Markus J. Buehler"  class="image">
 		</div>
+	</div> -->
+	<div class="container_six">
+	<div class="image-box">
+        <img src="assets/img/sanmi_koyejo.jpg" alt="Dr. Sanmi Koyejo">
+        <div class="caption">
+            <p>Dr. Sanmi Koyejo</p>
+            <p>Department of Computer Science, Stanford University</p>
+			<p><b>Website:</b> https://cs.stanford.edu/~sanmi/</p>
+        </div>
+    </div>
+    <div class="image-box">
+        <img src="assets/img/keynote-1.jpg" alt="Dr. Michael W. Mahoney">
+        <div class="caption">
+            <p>Dr. Michael W. Mahoney</p>
+            <p>Department of Statistics, University of California, Berkeley</p>
+			<p><b>Website:</b> https://www.stat.berkeley.edu/~mmahoney/</p>
+        </div>
+    </div>
+    <div class="image-box">
+        <img src="assets/img/keynote-2.jpg" alt="Dr. Su-In Lee">
+        <div class="caption">
+            <p>Dr. Su-In Lee</p>
+            <p>Department of Computer Science, University of Washington</p>
+			<p><b>Website:</b> https://aims.cs.washington.edu/su-in-lee/</p>
+        </div>
+    </div>
+    <div class="image-box">
+        <img src="assets/img/keynote-3.jpg" alt="Dr. Marinka Zitnik">
+        <div class="caption">
+            <p>Dr. Marinka Zitnik</p>
+            <p>Department of Biomedical Informatics, Harvard Medical School</p>
+			<p><b>Website:</b> https://kempnerinstitute.harvard.edu/people/our-people/marinka-zitnik/</p>
+        </div>
+    </div>
+    <div class="image-box">
+        <img src="assets/img/keynote-4.jpg" alt="Dr. Markus J. Buehler">
+        <div class="caption">
+            <p>Dr. Markus J. Buehler</p>
+            <p>Department of Civil and Environmental Engineering, Massachusetts Institute of Technology</p>
+			<p><b>Website:</b> https://cee.mit.edu/people_individual/markus-j-buehler/</p>
+        </div>
+    </div>
+    <div class="image-box">
+        <img src="assets/img/john_jumper.png" alt="Dr. John Jumper">
+        <div class="caption">
+            <p>Dr. John Jumper</p>
+            <p>Director, Google DeepMind</p>
+			<p><b>Website:</b> https://en.wikipedia.org/wiki/John_M._Jumper</p>
+        </div>
+    </div>
+</div>
+	</section>
 
           <!-- <div class="col-lg-5 d-flex align-items-center">
 
@@ -339,9 +415,9 @@ ul li {
 
           <!-- </div> -->
 
-      </div>
+      <!-- </div>
 
-    </section><!-- /Features Section -->
+    </section> --><!-- /Features Section -->
 
     <!-- Features Details Section -->
     <!-- <section id="features-details" class="features-details section">
@@ -530,17 +606,94 @@ ul li {
 	<section id="organizers" class="schedule section light-background">
 	<div class="container section-title" data-aos="fade-up">
         <h2>ORGANIZERS</h2>
-        <p>Dr. Danai Koutra / University of Michigan / koutra@umich.edu / https://web.eecs.umich.edu/~dkoutra</p>
+        <!-- <p>Dr. Danai Koutra / University of Michigan / koutra@umich.edu / https://web.eecs.umich.edu/~dkoutra</p>
 		<p>Dr. Lifu Huang /  UC Davis / lfuhuang@ucdavis.edu / https://wilburone.github.io</p>
 		<p>Dr. Temiloluwa Prioleau / Dartmouth College / tprioleau@dartmouth.edu / https://www.t-prioleau.com</p>
 		<p>Dr. Qingyun Wu / Pennsylvania State University, / qingyun.wu@psu.edu / https://qingyun-wu.github.io</p>
 		<p>Dr. Yujun Yan / Dartmouth College / yujun.yan@dartmouth.edu / https://sites.google.com/umich.edu/yujunyan/home</p>
 		<p>Dr. Yaoqing Yang / Dartmouth College / yaoqing.yang@dartmouth.edu / https://sites.google.com/site/yangyaoqingcmu</p>
 		<p>Dr. James Zou / Stanford University / jamesz@stanford.edu / https://www.james-zou.com/</p>
-		<p>Dr. Dawei Zhou / Virginia Tech / zhoud@vt.edu / https://sites.google.com/view/dawei-zhou/home</p>
+		<p>Dr. Dawei Zhou / Virginia Tech / zhoud@vt.edu / https://sites.google.com/view/dawei-zhou/home</p> -->
 		
 
       </div>
+	  
+	  <div class="container_eight">
+	<div class="image-box">
+        <img src="assets/img/danai_koutra.jpg" alt="Dr. Danai Koutra">
+        <div class="caption">
+            <p>Dr. Danai Koutra</p>
+            <p>University of Michigan</p>
+			<p><b>Email:</b> koutra@umich.edu</p>
+			<p><b>Website:</b> https://web.eecs.umich.edu/~dkoutra</p>
+        </div>
+    </div>
+    <div class="image-box">
+        <img src="assets/img/lifu_huang.jpeg" alt="Dr. Lifu Huang">
+        <div class="caption">
+            <p>Dr. Lifu Huang</p>
+            <p>UC Davis</p>
+			<p><b>Email:</b> lfuhuang@ucdavis.edu</p>
+			<p><b>Website:</b> https://wilburone.github.io</p>
+        </div>
+    </div>
+    <div class="image-box">
+        <img src="assets/img/Temiloluwa_Prioleau.jpg" alt="Dr. Temiloluwa Prioleau">
+        <div class="caption">
+            <p>Dr. Temiloluwa Prioleau</p>
+            <p>Dartmouth College</p>
+			<p><b>Email:</b> tprioleau@dartmouth.edu</p>
+			<p><b>Website:</b> https://www.t-prioleau.com</p>
+        </div>
+    </div>
+    <div class="image-box">
+        <img src="assets/img/Qingyun_Wu.jpg" alt="Dr. Qingyun Wu">
+        <div class="caption">
+            <p>Dr. Qingyun Wu</p>
+            <p>Pennsylvania State University</p>
+			<p><b>Email:</b> qingyun.wu@psu.edu</p>
+			<p><b>Website:</b> https://qingyun-wu.github.io</p>
+        </div>
+    </div>
+    <div class="image-box">
+        <img src="assets/img/Yujun_Yan.jpg" alt="Dr. Yujun Yan">
+        <div class="caption">
+            <p>Dr. Yujun Yan</p>
+            <p>Dartmouth College</p>
+			<p><b>Email:</b> yujun.yan@dartmouth.edu</p>
+			<p><b>Website:</b> https://sites.google.com/umich.edu/yujunyan/home</p>
+        </div>
+    </div>
+    <div class="image-box">
+        <img src="assets/img/Yaoqing_Yang.jpg" alt="Dr. Yaoqing Yang">
+        <div class="caption">
+            <p>Dr. Yaoqing Yang</p>
+            <p>Dartmouth College</p>
+			<p><b>Email:</b> yaoqing.yang@dartmouth.edu</p>
+			<p><b>Website:</b> https://sites.google.com/site/yangyaoqingcmu</p>
+        </div>
+    </div>
+	<div class="image-box">
+        <img src="assets/img/James_Zou.jpg" alt="Dr. James Zou">
+        <div class="caption">
+            <p>Dr. James Zou</p>
+            <p>Stanford University</p>
+			<p><b>Email:</b> jamesz@stanford.edu</p>
+			<p><b>Website:</b> https://www.james-zou.com/</p>
+        </div>
+    </div>
+    <div class="image-box">
+        <img src="assets/img/Dawei_Zhou.jpg" alt="Dr. Dawei Zhou">
+        <div class="caption">
+            <p>Dr. Dawei Zhou</p>
+            <p>Virginia Tech</p>
+			<p><b>Email:</b> zhoud@vt.edu</p>
+			<p><b>Website:</b> https://sites.google.com/view/dawei-zhou/home</p>
+        </div>
+    </div>
+	
+</div>
+	  
 	</section>
 	
 	<section id="sponsors" class="sponsors section">
