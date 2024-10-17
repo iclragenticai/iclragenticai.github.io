@@ -78,26 +78,36 @@ ul li {
             display: grid;
             grid-template-columns: repeat(5, 1fr); /* 3 columns */
             gap: 20px; /* Space between images */
-            margin: 100px; /* Overall margin */
+            <!-- margin: 100px; /* Overall margin */ -->
+			margin-top: 5px;
+			margin-bottom: 5px;
+		    margin-right: 350px;
+		    margin-left: 350px;
         }
 .container_eight {
             display: grid;
-            grid-template-columns: repeat(8, 1fr); /* 3 columns */
-            gap: 20px; /* Space between images */
-            margin: 100px; /* Overall margin */
+            grid-template-columns: repeat(4, 1fr); /* 3 columns */
+            gap: 40px; /* Space between images */
+            <!-- margin: 400px; /* Overall margin */ -->
+			margin-top: 5px;
+			margin-bottom: 5px;
+		    margin-right: 400px;
+		    margin-left: 400px;
         }
         .image-box {
             text-align: center; /* Center the text */
         }
         .caption {
-            font-size: 14px; /* Adjust font size */
+            font-size: 16px; /* Adjust font size */
             color: #555; /* Set color */
         }
         img {
             width: 100%; /* Make images responsive */
             height: auto; /* Maintain aspect ratio */
         }
-
+.table {display:table; margin-right: 100px; margin-left: 100px;}
+.row { display:table-row;}
+.cell {display:table-cell;width:10px;gap:5px;text-align: center;}
 </style>
   
 </head>
@@ -209,58 +219,77 @@ ul li {
 
         <h2>About the Workshop</h2>
         
-		<p align="left"> This workshop is designed to unite researchers and scientists from various fields, including both academia and industry, under the theme "Towards Agentic AI for Science." It will specifically focus on agentic AI systems in the context of scientific discovery. To facilitate this, AI systems must be capable of <i> generating novel and viable hypotheses, comprehend the applications and limitations of the generated hypotheses, quantify the resources needed to test the generated hypothesis, and validate the novelty and feasibility of the generated hypothesis by designing and implementing the experiments. </i>
+		<p align="left"> Our mission is to foster interdisciplinary collaboration to develop fully autonomous AI systems, addressing challenges like benchmark datasets, human-AI collaboration, robust tools and methods for validating AI outputs, and trustworthiness. By tackling these issues, we can unlock AI's transformative potential in research. In this workshop, themed “Towards Agentic AI for Science,” we will explore these critical topics and welcome diverse perspectives. We will focus on integrating agentic AI systems to enhance scientific discovery while upholding rigorous standards. For AI to contribute effectively, it must<i> generate novel hypotheses, comprehend their applications, quantify testing resources, and validate feasibility through well-designed experiments.</i> This workshop serves as a vital forum for collaboration and knowledge-sharing, aimed at redefining the landscape of scientific discovery. This workshop aims to address five main research questions to propel future research, including (non-exclusively):  
 			  </p>
-		<p align="left">This workshop invites insights from scientists and technology developers to gain a clearer understanding of how to address the factors that necessitate human involvement in AI systems. In this regard, we aim to thoroughly examine several important issues by welcoming and covering a wide range of topics, including (non-exclusively): </p>
+		<!-- <p align="left">This workshop invites insights from scientists and technology developers to gain a clearer understanding of how to address the factors that necessitate human involvement in AI systems. In this regard, we aim to thoroughly examine several important issues by welcoming and covering a wide range of topics, including (non-exclusively): </p>
+		 -->
+		<ul>
+		<li><b>How can we address the fundamental challenges in developing agentic AI systems for scientific discovery?</b>
+		<ul>
+		<li><i>Addressing Training Data Concerns:</i>  Implementing data augmentation, curation, and cleaning processes to improve the quality and accessibility of training datasets.</li>
+		<li><i>Creating Benchmark Datasets:</i> Establishing standardized datasets that can be used to evaluate and compare the performance of agentic AI systems across different scientific tasks.</li>
+		<li><i>Creating Benchmark Datasets:</i> Establishing standardized datasets that can be used to evaluate and compare the performance of agentic AI systems across different scientific tasks.</li>
+		<li><i>Creating Benchmark Evaluation Guidelines: Establishing standardized evaluation metrics and guidelines to validate AI outputs.</li>
+		<li><i>Developing Foundational LLMs for Scientific Domains</i> Tailoring large language models specifically for various scientific fields to enhance relevance and accuracy.</li>
+		<li><i>Employing Abductive, Inductive, and Deductive Reasoning</i> Leveraging reasoning techniques to generate novel hypotheses and draw meaningful conclusions from existing data.</li>
+		<li><i>Enhancing Human-AI Collaboration</i> Designing user-friendly interfaces and feedback mechanisms to facilitate seamless interaction between researchers and AI systems.</li>
+		<li><i>Implementing Explainable AI (XAI)</i> Develop explainable AI methods that provide transparency in decision-making, fostering trust and understanding.</li>
+		<li><i>Building Adaptive Learning Systems</i> Implement algorithms that adapt to new information and changing environments to improve decision-making over time.</li>
+		<li><i>Integrating Multidisciplinary Knowledge</i> Designing AI systems that can synthesize insights and methodologies from various scientific disciplines to tackle complex research questions.</li>
+		<li><i>Incorporating Feedback Loops</i> Implementing mechanisms for ongoing evaluation and refinement of AI outputs based on researcher feedback and experimental results.</li>
 		
-		<ul>
-		<li><b> Agentic AI as Autonomous Scientists -</b> empower AI to generate novel hypotheses, conduct experiments, analyze data, and draw conclusions without human guidance.
-		<ul>
-		<li>Novel hypothesis generation</li>
-		<li>Automatic comprehension, quantification and validation of generated hypothesis</li>
 		</ul>
 		
 		</li>
-		<li><b> Automated AI: Agentic AI systems to achieve specific scientific goals -</b> leveraging capabilities of AI to enhance research efficiency and innovation.
+		<li><b>How can we achieve full autonomy in agentic AI systems?</b>
 		<ul>
-		<li>Adaptive Learning Systems (ALS)</li>
-		<li>Lifelong Learning Machines (L2M)</li>
-		<li>Automated scientific rule mining, knowledge extraction and representation, and workflow management</li>
+		<li><i>Automated Data Curation:</i> Use automated processes to curate and validate datasets, ensuring high-quality input for the AI system.</li>
+		<li><i>Bayesian Optimization for Experimental Design:</i> Use Bayesian methods to optimize experimental parameters efficiently.</li>
+		<li><i>Multi-Agent Systems:</i> Develop multi-agent frameworks that allow multiple AI agents to collaborate and make decisions collectively.</li>
+		<li><i>Automated Hypothesis Generation and Evaluation</i> Integrate natural language processing (NLP) techniques to autonomously generate and evaluate scientific hypotheses.</li>
+		<li><i>Dynamic Knowledge Graphs</i> Create dynamic knowledge graphs to facilitate real-time updates and connections between diverse data sources.</li>
 		</ul>
 		
 		</li>
-		<li><b> Creation of Scientific Agentic AI Systems -</b> develop advanced AI systems capable of functioning autonomously in scientific contexts.
+		<li><b>How can we tackle ethical and trustworthiness issues in agentic AI systems for scientific discovery?</b>
 		<ul>
-		<li>Requirements and guidelines to develop such systems</li>
-		<li>Human-AI collaboration - interface for effective collaboration</li>
+		<li><i>Theoretical Guarantees for AI Output:</i> Develop formal frameworks that provide guarantees on the reliability and accuracy of AI outputs.</li>
+		<li><i>Ensuring Ethical Data Usage:</i> Establish guidelines for ethical data collection and usage, prioritizing informed consent and data privacy.</li>
+		<li><i>Bias Detection and Mitigation</i> Implement techniques for identifying and mitigating biases in training data and algorithms to promote fairness.</li>
+		<li><i>Transparent Decision-Making Processes</i> Develop AI systems that offer transparency in their decision-making processes, allowing researchers to understand how conclusions are reached.</li>
+		<li><i>Metrics to Measure Algorithmic Fairness and Transparency</i> Implement metrics that assess fairness and transparency in AI decision-making to mitigate biases and ensure equitable outcomes.</li>
+		<li><i>Ethical Implications of Generated Hypotheses</i> Develop procedures to conduct thorough assessments of the ethical implications of hypotheses generated by AI systems.</li>
+		<li><i>Continuous Ethical Auditing</i> Establish processes for regular ethical audits of AI systems to identify and address potential issues over time.</li>
 		</ul>
 		
 		</li>
-		<li><b> Automatic Comprehension and Quantification of Agentic AI Systems -</b> develop methodologies and tools that enable a deep understanding and measurable assessment of Agentic AI systems’ performance, capabilities, and impacts in scientific contexts.
+		<li><b>How can we overcome challenges related to publishing scientific hypotheses generated by agentic AI systems?</b>
 		<ul>
-		<li>Characteristics of Agentic AI behavior</li>
-		<li>Metrics for measuring autonomy and decision-making capabilities</li>
-		<li>Metrics to measure contextual awareness in AI systems</li>
+		<li><i>Publication Barriers:</i> Many journals and conferences hesitate to publish AI-generated hypotheses due to concerns about criticism and backlash. To address this, it is essential to establish clear guidelines and frameworks that define expectations for reviewers and editors regarding AI-generated content.</li>
+		<li><i>Lack of Standardization:</i> Create standardized formats and protocols for presenting AI-generated hypotheses, ensuring consistency across publications.</li>
+		<li><i>Peer Review Adaptations:</i> Adapt peer review processes to include criteria for evaluating AI-generated content, incorporating experts in AI ethics and methodology.</li>
+		<li><i>Social Media Forums</i> Social media can boost discussions and visibility, but it may introduce biases in evaluating hypotheses, complicating scholarly discourse. To address this, it is essential to create dedicated social media forums for sharing and discussing AI-generated scientific hypotheses.</li>
+		<li><i>Ethics Review Boards</i> Establish ethics review boards to assess the implications of publishing AI-generated hypotheses, ensuring ethical standards are met.</li>
 		</ul>
 		
 		</li>
-		<li><b> Validation of Agentic AI Systems -</b> ensure Agentic AI systems operate reliably, ethically, and effectively in scientific research and applications.
+		<li><b>How can we enhance collaboration and sharing among researchers to advance the development of agentic AI systems for scientific discovery?</b>
 		<ul>
-		<li>Agentic AI system with worst-case guarantees</li>
-		<li>Diagnosing Agentic AI systems</li>
-		<li>Agentic AI assurance -  robustness, reliability, accountability and trustworthiness</li>
+		<li><i>Establishing Collaborative Networks:</i> Creating platforms that connect researchers across disciplines, fostering collaboration and sharing of AI-driven insights and methodologies.</li>
+		<li><i>Cross-Disciplinary Journals and Conferences:</i> Promote journals and conferences that focus on interdisciplinary research, making it easier to publish hypotheses that span multiple fields.</li>
+		<li><i>Data Sharing Initiatives:</i> Encourage data sharing related to AI-generated hypotheses to support validation and replication efforts.</li>
 		</ul>
 		
 		</li>
 		</ul>
 		
-			<p align="left">The rapid advancement of agentic AI systems necessitates the establishment of benchmark datasets, evaluation metrics, and guidelines. Thus, in addition to the previously mentioned topics, we invite research contributions in the following areas</p>
+			<!-- <p align="left">The rapid advancement of agentic AI systems necessitates the establishment of benchmark datasets, evaluation metrics, and guidelines. Thus, in addition to the previously mentioned topics, we invite research contributions in the following areas</p>
 			<div id="about_section">
 			<ul>
 			<li><b>Dataset:</b> Our proposed dataset track will accept datasets that support  scientific discovery involving agentic AI systems.</li>
 			<li><b>Evaluation:</b> We welcome submissions of innovative evaluation methods or metrics aimed at assessing the performance of agentic AI systems. These metrics may evaluate AI system performance across various stages of knowledge-driven autonomous scientific research, including the generation, understanding, quantification, and validation of scientific hypotheses.</li>
 			</ul>
-			</div>
+			</div> -->
             
 
      </div>
@@ -325,7 +354,7 @@ ul li {
         <img src="assets/img/sanmi_koyejo.jpg" alt="Dr. Sanmi Koyejo">
         <div class="caption">
             <p>Dr. Sanmi Koyejo</p>
-            <p>Department of Computer Science, Stanford University</p>
+            <p><b>Department of Computer Science, Stanford University</b></p>
 			<p><b>Website:</b> https://cs.stanford.edu/~sanmi/</p>
         </div>
     </div>
@@ -333,7 +362,7 @@ ul li {
         <img src="assets/img/keynote-1.jpg" alt="Dr. Michael W. Mahoney">
         <div class="caption">
             <p>Dr. Michael W. Mahoney</p>
-            <p>Department of Statistics, University of California, Berkeley</p>
+            <p><b>Department of Statistics, University of California, Berkeley</b></p>
 			<p><b>Website:</b> https://www.stat.berkeley.edu/~mmahoney/</p>
         </div>
     </div>
@@ -341,7 +370,7 @@ ul li {
         <img src="assets/img/keynote-2.jpg" alt="Dr. Su-In Lee">
         <div class="caption">
             <p>Dr. Su-In Lee</p>
-            <p>Department of Computer Science, University of Washington</p>
+            <p><b>Department of Computer Science, University of Washington</b></p>
 			<p><b>Website:</b> https://aims.cs.washington.edu/su-in-lee/</p>
         </div>
     </div>
@@ -349,7 +378,7 @@ ul li {
         <img src="assets/img/keynote-3.jpg" alt="Dr. Marinka Zitnik">
         <div class="caption">
             <p>Dr. Marinka Zitnik</p>
-            <p>Department of Biomedical Informatics, Harvard Medical School</p>
+            <p><b>Department of Biomedical Informatics, Harvard Medical School</b></p>
 			<p><b>Website:</b> https://kempnerinstitute.harvard.edu/people/our-people/marinka-zitnik/</p>
         </div>
     </div>
@@ -357,7 +386,7 @@ ul li {
         <img src="assets/img/keynote-4.jpg" alt="Dr. Markus J. Buehler">
         <div class="caption">
             <p>Dr. Markus J. Buehler</p>
-            <p>Department of Civil and Environmental Engineering, Massachusetts Institute of Technology</p>
+            <p><b>Department of Civil and Environmental Engineering, Massachusetts Institute of Technology</b></p>
 			<p><b>Website:</b> https://cee.mit.edu/people_individual/markus-j-buehler/</p>
         </div>
     </div>
@@ -615,7 +644,7 @@ ul li {
         <img src="assets/img/danai_koutra.jpg" alt="Dr. Danai Koutra">
         <div class="caption">
             <p>Dr. Danai Koutra</p>
-            <p>University of Michigan</p>
+            <p><b>University of Michigan</b></p>
 			<p><b>Email:</b> koutra@umich.edu</p>
 			<p><b>Website:</b> https://web.eecs.umich.edu/~dkoutra</p>
         </div>
@@ -624,7 +653,7 @@ ul li {
         <img src="assets/img/lifu_huang.jpeg" alt="Dr. Lifu Huang">
         <div class="caption">
             <p>Dr. Lifu Huang</p>
-            <p>UC Davis</p>
+            <p><b>UC Davis</b></p>
 			<p><b>Email:</b> lfuhuang@ucdavis.edu</p>
 			<p><b>Website:</b> https://wilburone.github.io</p>
         </div>
@@ -633,7 +662,7 @@ ul li {
         <img src="assets/img/Temiloluwa_Prioleau.jpg" alt="Dr. Temiloluwa Prioleau">
         <div class="caption">
             <p>Dr. Temiloluwa Prioleau</p>
-            <p>Dartmouth College</p>
+            <p><b>Dartmouth College</b></p>
 			<p><b>Email:</b> tprioleau@dartmouth.edu</p>
 			<p><b>Website:</b> https://www.t-prioleau.com</p>
         </div>
@@ -642,7 +671,7 @@ ul li {
         <img src="assets/img/Qingyun_Wu.jpg" alt="Dr. Qingyun Wu">
         <div class="caption">
             <p>Dr. Qingyun Wu</p>
-            <p>Pennsylvania State University</p>
+            <p><b>Pennsylvania State University</b></p>
 			<p><b>Email:</b> qingyun.wu@psu.edu</p>
 			<p><b>Website:</b> https://qingyun-wu.github.io</p>
         </div>
@@ -651,7 +680,7 @@ ul li {
         <img src="assets/img/Yujun_Yan.jpg" alt="Dr. Yujun Yan">
         <div class="caption">
             <p>Dr. Yujun Yan</p>
-            <p>Dartmouth College</p>
+            <p><b>Dartmouth College</b></p>
 			<p><b>Email:</b> yujun.yan@dartmouth.edu</p>
 			<p><b>Website:</b> https://sites.google.com/umich.edu/yujunyan/home</p>
         </div>
@@ -660,7 +689,7 @@ ul li {
         <img src="assets/img/Yaoqing_Yang.jpg" alt="Dr. Yaoqing Yang">
         <div class="caption">
             <p>Dr. Yaoqing Yang</p>
-            <p>Dartmouth College</p>
+            <p><b>Dartmouth College</b></p>
 			<p><b>Email:</b> yaoqing.yang@dartmouth.edu</p>
 			<p><b>Website:</b> https://sites.google.com/site/yangyaoqingcmu</p>
         </div>
@@ -669,7 +698,7 @@ ul li {
         <img src="assets/img/James_Zou.jpg" alt="Dr. James Zou">
         <div class="caption">
             <p>Dr. James Zou</p>
-            <p>Stanford University</p>
+            <p><b>Stanford University</b></p>
 			<p><b>Email:</b> jamesz@stanford.edu</p>
 			<p><b>Website:</b> https://www.james-zou.com/</p>
         </div>
@@ -678,7 +707,7 @@ ul li {
         <img src="assets/img/Dawei_Zhou.jpg" alt="Dr. Dawei Zhou">
         <div class="caption">
             <p>Dr. Dawei Zhou</p>
-            <p>Virginia Tech</p>
+            <p><b>Virginia Tech</b></p>
 			<p><b>Email:</b> zhoud@vt.edu</p>
 			<p><b>Website:</b> https://sites.google.com/view/dawei-zhou/home</p>
         </div>
@@ -710,6 +739,106 @@ ul li {
     <section id="contact" class="contact section">
 
       <!-- Section Title -->
+	  
+	  <div class="container section-title" data-aos="fade-up">
+        <h2>COMMITTEE MEMBERS</h2>
+	</div>
+        <div class="table">
+		<div class="row">
+		<div class="cell">Danai Koutra (U Mich.)</div>
+		<div class="cell">Lifu Huang (UC Davis)</div>
+		<div class="cell">Qingyun Wu (PSU)</div>
+		</div>
+		<div class="row">
+		<div class="cell">Yujun Yan (Dartmouth)</div>
+		<div class="cell">Adithya Kulkarni (VT)</div>
+		<div class="cell">Mohna Chakraborty (U Mich.)</div>
+		</div>
+		<div class="row">
+		<div class="cell">Pascal Notin (Harvard Medical School)</div>
+		<div class="cell">Adam Fisch (MIT)</div>
+		<div class="cell">Ahana Gangopadhyay (WU in St.Louis)</div>
+		</div>
+		<div class="row">
+		<div class="cell">Longfeng Wu (VT)</div>
+		<div class="cell">Kexin Huang (Stanford)</div>
+		<div class="cell">Alexander Wettig (Princeton)</div>
+		</div>
+		<div class="row">
+		<div class="cell">Aishwarya Balwani (Georgia Tech)</div>
+		<div class="cell">Aman Madaan (CMU)</div>
+		<div class="cell">Asher Trockman (CMU)</div>
+		</div>
+		<div class="row">
+		<div class="cell">Benjamin L. Edelman (Harvard)</div>
+		<div class="cell">Jianan Zhou (NTU Singapore)</div>
+		<div class="cell">Jingling Li (UMD)</div>
+		</div>
+		<div class="row">
+		<div class="cell">Anna Hart (UIUC)</div>
+		<div class="cell">Azmine Toushik Wasi (SUST)</div>
+		<div class="cell">Giorgio Giannone (Amazon)</div>
+		</div>
+		<div class="row">
+		<div class="cell">Hanzi Xu (Temple)</div>
+		<div class="cell">Hongyi Liu (SJTU)</div>
+		<div class="cell">Hou Pong Chan (Alibaba)</div>
+		</div>
+		<div class="row">
+		<div class="cell">Hyeonjeong Ha (KAIST)</div>
+		<div class="cell">Lijun Wu (ByteDance)</div>
+		<div class="cell">Michael JQ Zhang (UT Austin)</div>
+		</div>
+		
+		
+		<div class="row">
+		<div class="cell">Temiloluwa Prioleau (Dartmouth)</div>
+		<div class="cell">Yaoqing Yang (Dartmouth)</div>
+		<div class="cell">James Zou (Stanford)</div>
+		</div>
+		<div class="row">
+		<div class="cell">Dawei Zhou (VT)</div>
+		<div class="cell">Fatimah Alotaibi (VT)</div>
+		<div class="cell">Barry Menglong Yao (VT)</div>
+		</div>
+		<div class="row">
+		<div class="cell">Tong Zeng (VT)</div>
+		<div class="cell">Yusuf Roohani (Stanford)</div>
+		<div class="cell">Reza Abbasi-Asl (UCSF)</div>
+		</div>
+		<div class="row">
+		<div class="cell">Michael Poli (Stanford)</div>
+		<div class="cell">Benjamin Newman (UCR)</div>
+		<div class="cell">Charlie Victor Snell (UC Berkeley)</div>
+		</div>
+		<div class="row">
+		<div class="cell">Christina Baek (UC Berkeley)</div>
+		<div class="cell">Collin Burns (Columbia)</div>
+		<div class="cell">Daniel Y Fu (Stanford)</div>
+		</div>
+		<div class="row">
+		<div class="cell">Dingli Yu (Princeton)</div>
+		<div class="cell">Erik Jones (UC Berkeley)</div>
+		<div class="cell">Haokun Liu (UNC)</div>
+		</div>
+		<div class="row">
+		<div class="cell">Haonan Duan (Univ. of Toronto)</div>
+		<div class="cell">Jiacheng Liu (UW)</div>
+		<div class="cell">Ibraheem Moosa (PSU)</div>
+		</div>
+		<div class="row">
+		<div class="cell">Jiajie Li (UBuffalo)</div>
+		<div class="cell">Jiawei Ma (CUHK)</div>
+		<div class="cell">Kaiyuan Gao (HUST)</div>
+		</div>
+		<div class="row">
+		<div class="cell">Kuan-Hao Huang (TAMU)</div>
+		<div class="cell">Odhran ODonoghue (Oxford)</div>
+		<div class="cell">Qi Zeng (Meta)</div>
+		</div>
+		
+      </div>
+	  
       <div class="container section-title" data-aos="fade-up">
         <h2>CONTACT US</h2>
         <p>You can contact us at aditkulk@vt.edu</p>
