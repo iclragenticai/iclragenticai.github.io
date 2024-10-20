@@ -1047,10 +1047,18 @@ section,
 .about .content ul {
   list-style: none;
   padding: 0;
+  list-style: circle;
+/*   list-style: none; */
+  text-align: left;
+  list-style-type: circle;
 }
 
 .about .content ul li {
   padding-bottom: 10px;
+/*   list-style: none; */
+  text-align: left;
+  list-style-type: circle;
+  list-style: circle;
 }
 
 .about .content ul i {
@@ -1058,6 +1066,25 @@ section,
   margin-right: 4px;
   color: var(--accent-color);
 }
+
+.about .container ul {
+	padding-bottom: 5px;
+  list-style-type: square;
+  text-align: left;
+}
+
+.about .container li {
+  padding-bottom: 5px;
+  text-align: left;
+  list-style-type: square;
+  list-style: square;
+}
+
+/* .about .container ul i {
+  font-size: 1.25rem;
+  margin-right: 4px;
+  color: var(--accent-color);
+} */
 
 .about .content p:last-child {
   margin-bottom: 0;
