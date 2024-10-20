@@ -76,23 +76,36 @@ ul li {
 		
 .container_six {
             display: grid;
-            grid-template-columns: repeat(5, 1fr); /* 3 columns */
+            grid-template-columns: repeat(5, 225px); /* 3 columns */
             gap: 20px; /* Space between images */
             <!-- margin: 100px; /* Overall margin */ -->
 			margin-top: 5px;
 			margin-bottom: 5px;
-		    margin-right: 200px;
-		    margin-left: 200px;
+		    margin-right: 150px;
+		    margin-left: 150px;
+			justify-content: center;
         }
 .container_eight {
             display: grid;
-            grid-template-columns: repeat(4, 1fr); /* 3 columns */
+            grid-template-columns: repeat(4, 225px); /* 3 columns */
             gap: 40px; /* Space between images */
             <!-- margin: 400px; /* Overall margin */ -->
 			margin-top: 5px;
 			margin-bottom: 5px;
 		    margin-right: 250px;
 		    margin-left: 250px;
+			justify-content: center;
+        }
+.container_one {
+            display: grid;
+            grid-template-columns: repeat(1, 225px); /* 3 columns */
+            gap: 40px; /* Space between images */
+            <!-- margin: 400px; /* Overall margin */ -->
+			margin-top: 5px;
+			margin-bottom: 5px;
+		    margin-right: 600px;
+		    margin-left: 600px;
+			justify-content: center;
         }
         .image-box {
             text-align: center; /* Center the text */
@@ -350,20 +363,20 @@ ul li {
 		</div>
 	</div> -->
 	<div class="container_six">
-	<div class="image-box">
-        <img src="assets/img/sanmi_koyejo.jpg" alt="Dr. Sanmi Koyejo">
-        <div class="caption">
-            <p>Dr. Sanmi Koyejo</p>
-            <p><b>Department of Computer Science, Stanford University</b></p>
-			<p><b>Website:</b> https://cs.stanford.edu/~sanmi/</p>
-        </div>
-    </div>
     <div class="image-box">
         <img src="assets/img/keynote-1.jpg" alt="Dr. Michael W. Mahoney">
         <div class="caption">
             <p>Dr. Michael W. Mahoney</p>
             <p><b>Department of Statistics, University of California, Berkeley</b></p>
 			<p><b>Website:</b> https://www.stat.berkeley.edu/~mmahoney/</p>
+        </div>
+    </div>
+	<div class="image-box">
+        <img src="assets/img/sanmi_koyejo.jpg" alt="Dr. Sanmi Koyejo">
+        <div class="caption">
+            <p>Dr. Sanmi Koyejo</p>
+            <p><b>Department of Computer Science, Stanford University</b></p>
+			<p><b>Website:</b> https://cs.stanford.edu/~sanmi/</p>
         </div>
     </div>
     <div class="image-box">
@@ -639,7 +652,7 @@ ul li {
 
       </div>
 	  
-	  <div class="container_eight">
+	<div class="container_eight">
 	<div class="image-box">
         <img src="assets/img/danai_koutra.jpg" alt="Dr. Danai Koutra">
         <div class="caption">
@@ -716,6 +729,29 @@ ul li {
 </div>
 	  
 	</section>
+	
+	<section id="organizers" class="organizers section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Publicity Chair</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container_one">
+	  <div class="image-box">
+        <img src="assets/img/adithya.jpeg" alt="Dr. Adithya Kulkarni">
+        <div class="caption">
+            <p>Dr. Adithya Kulkarni</p>
+            <p><b>Virginia Tech</b></p>
+			<p><b>Email:</b> aditkulk@vt.edu</p>
+			<p><b>Website:</b> https://kulkarniadithya.github.io</p>
+        </div>
+    </div>
+	  
+	  
+	  </div>
+
+    </section>
 	
 	<section id="sponsors" class="sponsors section">
 
