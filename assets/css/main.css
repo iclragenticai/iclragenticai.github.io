@@ -11,35 +11,50 @@
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 /* Fonts */
-:root {
+/* :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Nunito",  sans-serif;
   --nav-font: "Inter",  sans-serif;
+} */
+:root {
+  --default-font: "Poppins", "Open Sans", system-ui, sans-serif, "Fira Sans", "Ubuntu", "Droid Sans", "Cantarell", "Source Sans Pro", "Noto Sans", sans-serif;
+  --heading-font: "Montserrat", sans-serif;
+  --nav-font: "Work Sans", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+/* :root { */
+/*  --background-color: #ffffff;  Background color for the entire website, including individual sections */
+/*  --default-color: #3d4348; Default color used for the majority of the text content across the entire website */
+/*  --heading-color: #3e5055; Color for headings, subheadings and title throughout the website */
+/*  --accent-color: #388da8; Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+/*  --surface-color: #ffffff; The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+/*  --contrast-color: #ffffff; Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+/*} */
+
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #3d4348; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #3e5055; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #388da8; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --background-color: #f7f9fc; /* Soft and neutral background color for the entire website */
+  --default-color: #2e3135; /* Neutral yet modern default text color */
+  --heading-color: #2b3a42; /* Rich and bold color for headings to emphasize content */
+  --accent-color: #4ba2c7; /* Unique accent color for buttons, links, and call-to-action elements */
+  --surface-color: #fdfefe; /* Slightly distinct surface color for boxed elements, creating a subtle contrast */
+  --contrast-color: #f9f9f9; /* Contrast color for text and elements on darker or more vibrant backgrounds */
 }
+
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #313336;  /* The default color of the main navmenu links */
-  --nav-hover-color: #77b6ca; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #313336; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #77b6ca; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: #2a4d2e;  /* The default color of the main navmenu links */
+  --nav-hover-color: #3fa34d; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #f3f9f3; /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #eaf4ea; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #2a4d2e; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #3fa34d; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
-.light-background {
+/* .light-background {
   --background-color: #f8fbfc;
   --surface-color: #ffffff;
 }
@@ -50,7 +65,21 @@
   --heading-color: #ffffff;
   --surface-color: #252525;
   --contrast-color: #ffffff;
+} */
+
+.light-background {
+  --background-color: #f3f7f9; /* A unique soft blue-gray for a light, clean background */
+  --surface-color: #fdfdfd; /* A slightly off-white surface color for subtle contrast */
 }
+
+.dark-background {
+  --background-color: #0a0a0a; /* A deep black with a subtle tint for a richer dark background */
+  --default-color: #f1f1f1; /* A soft off-white for text to reduce strain on dark backgrounds */
+  --heading-color: #e9e9e9; /* A light gray for headings to subtly differentiate them */
+  --surface-color: #2a2a2a; /* A dark gray for elements requiring contrast within the dark theme */
+  --contrast-color: #ededed; /* A slightly brighter off-white for key contrasting elements */
+}
+
 
 /* Smooth scroll */
 :root {
@@ -179,7 +208,7 @@ h6 {
 .header .btn-getstarted,
 .header .btn-getstarted:focus {
   color: var(--contrast-color);
-  background: var(--accent-color);
+  background: #3fa34d;
   font-size: 14px;
   padding: 8px 25px;
   margin: 0 0 0 30px;
@@ -190,7 +219,7 @@ h6 {
 .header .btn-getstarted:hover,
 .header .btn-getstarted:focus:hover {
   color: var(--contrast-color);
-  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+  background: color-mix(in srgb, #3fa34d, transparent 15%);
 }
 
 @media (max-width: 1200px) {
@@ -835,7 +864,7 @@ section,
   display: block;
   width: 50px;
   height: 3px;
-  background: var(--accent-color);
+  background: #3fa34d;
   left: 0;
   right: 0;
   bottom: 0;
